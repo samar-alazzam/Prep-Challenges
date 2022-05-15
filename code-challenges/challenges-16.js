@@ -47,7 +47,7 @@ const detectFace = (arr) => {
             }
         }
     }
-    return output;;
+    return out;
 
     
     
