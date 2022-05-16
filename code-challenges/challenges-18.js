@@ -15,8 +15,10 @@
 //
 
 const wordLength = (str) => {
-    </>
     // write your code here
+    let spr = str.split(' ');
+    let indexOfMiddle = Math.floor(spr.length / 2);
+    return spr[indexOfMiddle].length;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -41,30 +43,18 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
-
-    let n1=str1.length;
-    let n2=str2.length;
-
-    if(n1 != n2)
-    {
-        return false;
-    }
-    else
-    {
-        str1.sort();
-        str2.sort()
-
-        for (let i = 0; i < n1; i++)
-            if (str1[i] != str2[i])
+    // write your code here
+    let arr1=str1.split("");
+    let arr2=str2.split("");
+    if(arr1.length!=arr2.length)
+    return false;
+    arr1.sort();
+    arr2.sort();
+    for (let i = 0; i < arr1.length; i++)
+            if (arr1[i] != arr2[i])
                 return false;
    
         return true;
-    }
-
-
-    
-    
-    
 }
 // -------------------------------------------------------------------------------------------------------
 
