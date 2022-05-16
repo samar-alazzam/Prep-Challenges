@@ -36,14 +36,18 @@ const reverseString = (string) => {
 
 const detectFace = (arr) => {
 
-    let reg=/[a-z][A-Z]+\w\w\w$/ig
-    
-    let x=arr.map(element =>{
-        if(element.includes(reg)){
-            return true;
+    let check=[];
+    let out=[];
+    for(let i=0;i<arr.length;i++){
+        check=arr[i].split(" ");
+        for(let j=0;j<check.length;j++){
+            if(check[j]=="^_^"){
+                out.push(arr[i]);
+                j=check.length;
+            }
         }
-    });
-    return x;
+    }
+    return out;
 
 
 
