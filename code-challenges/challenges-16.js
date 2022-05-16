@@ -35,7 +35,7 @@ const reverseString = (string) => {
 // Input <= ["hello ^_^ ","Hi ^_^" ,"What's up ^_-" ,"lol"] , Output => ["hello ^_^ ","Hi ^_^" ] ;
 
 const detectFace = (arr) => {
-
+    
     let check=[];
     let out=[];
     for(let i=0;i<arr.length;i++){
@@ -49,9 +49,7 @@ const detectFace = (arr) => {
     }
     return out;
 
-
-
-    //write your code here ...
+    
     
         
       
