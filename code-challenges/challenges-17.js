@@ -15,6 +15,10 @@
 //
 
 const recursionPattern = (int1, int2) => {
+<<<<<<< HEAD
+=======
+    // write your code here
+>>>>>>> 5c79162ce814f3961a4ee71733d338b9acd9b627
     let arr =[];
     let co;
     arr.push(int1);
@@ -28,6 +32,7 @@ const recursionPattern = (int1, int2) => {
         co=co+int2;
         arr.push(co);
     }
+<<<<<<< HEAD
 
     return arr;
 
@@ -37,6 +42,11 @@ const recursionPattern = (int1, int2) => {
 
     
 
+=======
+ 
+    return arr;
+}
+>>>>>>> 5c79162ce814f3961a4ee71733d338b9acd9b627
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -54,6 +64,10 @@ const recursionPattern = (int1, int2) => {
 // 
 
 const filterLinks = (str) => {
+<<<<<<< HEAD
+=======
+    // write your code here
+>>>>>>> 5c79162ce814f3961a4ee71733d338b9acd9b627
     let Start = str.indexOf('www');
     let End;
     if (str.includes("com")) {
@@ -67,7 +81,10 @@ const filterLinks = (str) => {
     }
     return str.substring(Start, End + 3);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c79162ce814f3961a4ee71733d338b9acd9b627
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -85,7 +102,12 @@ const filterLinks = (str) => {
 //
 
 const isPalindrome = (str) => {
+<<<<<<< HEAD
     let forward = str.replace(/\W/gm, '').toLowerCase();
+=======
+    // write your code here
+    let forward = str.replace(/\W/gm ,'').toLowerCase();
+>>>>>>> 5c79162ce814f3961a4ee71733d338b9acd9b627
     let backward = forward.split('').reverse().join('');
     return (forward == backward);
 }
