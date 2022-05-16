@@ -15,7 +15,8 @@
 //
 
 const recursionPattern = (int1, int2) => {
-    // write your code here
+
+
     let arr =[];
     let co;
     arr.push(int1);
@@ -29,9 +30,17 @@ const recursionPattern = (int1, int2) => {
         co=co+int2;
         arr.push(co);
     }
- 
+
+
     return arr;
-}
+
+    
+  
+    }
+
+    
+
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -49,7 +58,8 @@ const recursionPattern = (int1, int2) => {
 // 
 
 const filterLinks = (str) => {
-    // write your code here
+
+
     let Start = str.indexOf('www');
     let End;
     if (str.includes("com")) {
@@ -63,6 +73,9 @@ const filterLinks = (str) => {
     }
     return str.substring(Start, End + 3);
 }
+
+
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -80,8 +93,9 @@ const filterLinks = (str) => {
 //
 
 const isPalindrome = (str) => {
-    // write your code here
-    let forward = str.replace(/\W/gm ,'').toLowerCase();
+
+    let forward = str.replace(/\W/gm, '').toLowerCase();
+
     let backward = forward.split('').reverse().join('');
     return (forward == backward);
 }
